@@ -1,6 +1,3 @@
-(function(angular) {
-  'use strict';
-
   function TextureDetailController() {
     this.colors = [{
       name: 'Hard/Pebble',
@@ -37,6 +34,5 @@
     templateUrl: 'options.html',
     controller: TextureDetailController
   });
-})(window.angular);
 
 var texArr = document.getElementsByClassName("consistency");

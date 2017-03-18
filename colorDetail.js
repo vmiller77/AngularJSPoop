@@ -1,6 +1,3 @@
-(function(angular) {
-  'use strict';
-
   function ColorDetailController() {
     this.colors = [{
       name: 'brown',
@@ -37,4 +34,3 @@
     templateUrl: 'options.html',
     controller: ColorDetailController
   });
-})(window.angular);
