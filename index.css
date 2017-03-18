@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+body{
+  background-color: rgba(63,155,249,0.5);
+  font-family: 'Baloo Bhaina', cursive;
+}
+h{
+  font-family: 'Baloo Bhaina', cursive;
+}

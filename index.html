@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Poop</title>
+
+
+  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+  <script src="index.js"></script>
+  <script src="colorDetail.js"></script>
+  <script src="textureDetail.js"></script>
+  <script src="descriptionsColors.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+
+
+</head>
+
+<body ng-app="myApp">
+  <!-- components match only elements -->
+  <h1>What does your poop have to say?</h1>
+  <div>
+    <h>What color is it?</h>
+    <color-detail></color-detail>
+    <h>What is the consistency?</h>
+    <texture-detail></texture-detail>
+    <button onclick="analysis()" id="hi">Done</button>
+    <script>
+      function analysis() {
+        document.getElementById("hi").style.color = "blue";
+        var arr = document.getElementsByTagName("input");
+        if (arr.length === 12) {
+          document.getElementById("hi").style.color = "red";
+        }
+
+      }
+    </script>
+    <descriptions-colors></descriptions-colors>
+    <script>
+      var x = document.getElementsByName("descr");
+      if (x.length === 0) {
+        document.getElementById("hi").style.color = "purple";
+      }
+    </script>
+  </div>
+</body>
+
+</html>
